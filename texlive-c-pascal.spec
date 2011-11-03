@@ -1,3 +1,9 @@
+# revision 18337
+# category Package
+# catalog-ctan /macros/generic/c_pascal
+# catalog-date 2008-01-08 01:09:19 +0100
+# catalog-license pd
+# catalog-version 1.2
 Name:		texlive-c-pascal
 Version:	1.2
 Release:	1
@@ -47,6 +53,7 @@ and Pascal. Program source files may also be input.
 %doc %{_texmfdistdir}/doc/generic/c-pascal/prog/fib.py
 %doc %{_texmfdistdir}/doc/generic/c-pascal/prog/guess.pas
 %doc %{_texmfdistdir}/doc/generic/c-pascal/prog/sun.c
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -57,3 +64,5 @@ and Pascal. Program source files may also be input.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
