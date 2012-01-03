@@ -18,6 +18,8 @@ BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
+%define		_unpackaged_subdirs_terminate_build	0
+
 %description
 A TeX macro package for easy typesetting programs in Python, C
 and Pascal. Program source files may also be input.
