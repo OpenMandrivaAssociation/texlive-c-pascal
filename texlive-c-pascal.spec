@@ -1,3 +1,4 @@
+%global _python_bytecompile_build 0
 # revision 18337
 # category Package
 # catalog-ctan /macros/generic/c_pascal
@@ -6,7 +7,7 @@
 # catalog-version 1.2
 Name:		texlive-c-pascal
 Version:	1.2
-Release:	11
+Release:	12
 Summary:	Typeset Python, C and Pascal programs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/c_pascal
@@ -56,18 +57,3 @@ and Pascal. Program source files may also be input.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2-2
-+ Revision: 750767
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.2-1
-+ Revision: 718162
-- texlive-c-pascal
-- texlive-c-pascal
-- texlive-c-pascal
-- texlive-c-pascal
-- texlive-c-pascal
-
