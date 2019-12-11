@@ -7,7 +7,7 @@
 # catalog-version 1.2
 Name:		texlive-c-pascal
 Version:	1.2
-Release:	12
+Release:	13
 Summary:	Typeset Python, C and Pascal programs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/c_pascal
