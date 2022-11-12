@@ -12,8 +12,8 @@ Summary:	Typeset Python, C and Pascal programs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/c_pascal
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/c-pascal.r18337.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/c-pascal.doc.r18337.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/c-pascal.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/c-pascal.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
