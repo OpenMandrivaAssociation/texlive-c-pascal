@@ -6,14 +6,14 @@
 # catalog-license pd
 # catalog-version 1.2
 Name:		texlive-c-pascal
-Version:	1.2
-Release:	13
+Version:	18337
+Release:	1
 Summary:	Typeset Python, C and Pascal programs
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/generic/c_pascal
 License:	PD
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/c-pascal.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/c-pascal.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/c-pascal.r18337.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/c-pascal.doc.r18337.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +26,12 @@ A TeX macro package for easy typesetting programs in Python, C
 and Pascal. Program source files may also be input.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -50,7 +50,7 @@ and Pascal. Program source files may also be input.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
